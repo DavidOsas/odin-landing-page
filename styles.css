@@ -1,3 +1,9 @@
+:root {
+    --main-text-color: #F9FAF8;
+    --hero-bg-color: #1F2937;
+    --quote-bg-color: #E5E7EB;
+}
+
 * {
     margin: none;
     padding: none;
@@ -5,12 +11,85 @@
 }
 
 body {
-    font-family: Roboto, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', monospace
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, monospace
 }
+
+#container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+#container-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background: var(--hero-bg-color);
+}
+
+/* Navbar */
+
+
+#navbar {
+    width: 70%;
+    background: var(--hero-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-list-items > a {
+    color: var(--main-text-color);
+    font-size: 18px;
+}
+
+#logo > a {
+    font-size: 24px;
+    color: var(--main-text-color)
+}
+
+/* Top */
+
+#top {
+   display: flex;
+   flex: auto;
+   margin: 70px 0;
+   width: 70%;
+}
+
+#top-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+#top-right {
+    width: 50%;
+    background: var(--quote-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-text {
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--main-text-color);
+}
+
 
 a {
     text-decoration: none;
-    color: black;
 }
 
 ul {
